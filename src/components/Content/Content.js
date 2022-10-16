@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 import Collection from "../Collection/Collection";
 import './Content.css'
@@ -44,14 +44,26 @@ const Content = () => {
     // Returns a "stateful value" and a function to update it.
     // 'setCards' is function reference and is used whenever we need to change 'cards'.
     // When 'cards' changed through the 'setCards' call, Collection component is re-rendered.
-    const [cards, setCards] = useState(defaultCards)
-    const [selectedDeck, setDeck] = useState('Deck3')
+    // const [cards, setCards] = useState(defaultCards)
+    const [cards, setCards] = useState(JSON.parse(localStorage.getItem('cardsList')) || defaultCards)
+    // const [selectedDeck, setDeck] = useState('Deck3')
+    const [selectedDeck, setDeck] = useState(JSON.parse(localStorage.getItem('selectedDeck')) || 'Deck3')
 
+    // What function to execute ... when what changes ...
+    // [] - 'effect' will be executed only when component first loads
+    useEffect(() => {
+        // When the 'cards' changing, we're updating local storage
+        localStorage.setItem('cardsList', JSON.stringify(cards))
+    }, [cards]);
+    useEffect(() => {
+        localStorage.setItem('selectedDeck', JSON.stringify(selectedDeck))
+    }, [selectedDeck]);
 
     function handleDeckSelectionChange(event) {
         setDeck(event.target.value)
     }
 
+    // 'Prop drilling' - pass props from parent to child components
     return (
         <main>
             <h1>Cards Collection</h1>
@@ -64,6 +76,7 @@ const Content = () => {
                     <option value="Deck4">Deck 4</option>
                     <option value="Deck5">Deck 5</option>
                 </select>
+                &nbsp;This deck has {cards.filter((card) => card.deck === selectedDeck).length} cards.
             </div>
             <Collection cards={cards}
                         setCards={setCards}
