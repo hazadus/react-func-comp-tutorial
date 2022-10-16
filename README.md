@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# React Functional components tutorial app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Try out:
+- [How To Manage State in React with Redux](https://www.digitalocean.com/community/tutorials/how-to-manage-state-in-react-with-redux)
+- [Vite](https://vitejs.dev/blog/announcing-vite2.html)
+
+References:
+- freeCodeCamp React course
+- [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
