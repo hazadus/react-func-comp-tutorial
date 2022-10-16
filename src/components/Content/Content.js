@@ -1,5 +1,3 @@
-import {useState, useEffect} from "react";
-
 import Collection from "../Collection/Collection";
 import './Content.css'
 

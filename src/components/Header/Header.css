@@ -1,7 +1,7 @@
 .navbar {
   background-color: #282c34;
   /*max-height: 10vh;*/
-  height: 60px;
+  height: 80px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -10,6 +10,25 @@
   font-size: 25px;
   color: white;
   cursor: default;
+}
+
+.nav {
+  background-color: #454d5a;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  vert-align: middle;
+  font-size: 25px;
+  color: white;
+  cursor: default;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
 }
 
 .App-logo {

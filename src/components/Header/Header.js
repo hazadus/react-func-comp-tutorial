@@ -1,6 +1,7 @@
 import logo from "../../logo.svg";
 import './Header.css'
 import mtgLogo from '../../images/mtg-logo.png'
+import Nav from '../Nav/Nav';
 
 const Header = () => {
     return (
@@ -12,6 +13,7 @@ const Header = () => {
                 </h1>
                 <img src={mtgLogo} className="MTG-Logo" alt="MTG Logo" />
             </div>
+            <Nav/>
         </header>
     )
 }

@@ -1,9 +1,12 @@
-import './App.css';
-import Header from "./components/Header/Header";
-import Content from "./components/Content/Content";
-import Footer from "./components/Footer/Footer";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import {useState, useEffect} from "react";
+
+import './App.css';
+
+import Header from "./components/Header/Header";
+import Content from "./components/Content/Content";
+import Decks from "./components/Decks/Decks";
+import Footer from "./components/Footer/Footer";
 
 function App() {
     const defaultCards = [
@@ -66,12 +69,23 @@ function App() {
                 <Routes>
                     <Route path='/'
                            element={
-                            <>
                                 <Content cards={cards}
                                          setCards={setCards}
                                          selectedDeck={selectedDeck}
                                          setDeck={setDeck}/>
-                            </>
+                           }>
+                    </Route>
+                    <Route path='/decks/'
+                           element={
+                                <Decks cards={cards}
+                                     setCards={setCards}
+                                     selectedDeck={selectedDeck}
+                                     setDeck={setDeck}/>
+                           }>
+                    </Route>
+                    <Route path='*'
+                           element={
+                                <h1>Page Not Found!</h1>
                            }>
                     </Route>
                 </Routes>
