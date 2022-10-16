@@ -5,8 +5,15 @@ Try out:
 - [Vite](https://vitejs.dev/blog/announcing-vite2.html)
 
 References:
+- [React-Bootstrap](https://react-bootstrap.github.io/getting-started/introduction/)
 - freeCodeCamp React course
 - [Create React App](https://github.com/facebook/create-react-app).
+
+## Setup
+```bash
+$ npm install
+$ npm install react-bootstrap bootstrap
+```
 
 ## Available Scripts
 
