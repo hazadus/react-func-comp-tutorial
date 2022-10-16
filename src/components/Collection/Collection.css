@@ -1,0 +1,9 @@
+.collection {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 items in a row */
+    cursor: default; /* default arrow cursor */
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*flex-wrap: wrap; !* wrap cards to new line *!*/
+}

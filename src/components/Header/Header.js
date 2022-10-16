@@ -1,5 +1,6 @@
 import logo from "../../logo.svg";
 import './Header.css'
+import mtgLogo from '../../images/mtg-logo.png'
 
 const Header = () => {
     return (
@@ -9,6 +10,7 @@ const Header = () => {
                 <h1 className="">
                     React Functional Components Tutorial
                 </h1>
+                <img src={mtgLogo} className="MTG-Logo" alt="MTG Logo" />
             </div>
         </header>
     )

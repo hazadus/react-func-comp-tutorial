@@ -1,0 +1,13 @@
+.deckbar {
+  background-color: darkgrey;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* vertical alignment */
+  align-items: center; /* horizontal alignment */
+  color: black;
+}
+
+.deckbar select {
+  width: 200px;
+}

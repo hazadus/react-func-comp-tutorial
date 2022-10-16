@@ -1,0 +1,17 @@
+.mtg-card {
+    display: flex;
+    width: 300px;
+    height: 400px;
+    background: white;
+    flex-direction: column;
+    justify-content: center; /* vertical alignment */
+    align-items: center; /* horizontal alignment */
+    margin: 20px;
+    border: #282c34 solid 1px;
+    border-radius: 5px;
+}
+
+.mtg-card img {
+    width: 250px;
+    margin-bottom: 10px;
+}
