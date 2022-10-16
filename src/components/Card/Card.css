@@ -9,6 +9,12 @@
     margin: 20px;
     border: #282c34 solid 1px;
     border-radius: 5px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.selected {
+    box-shadow: 10px 10px 0 grey;
+    border: #282c34 solid 3px;
 }
 
 .mtg-card img {

@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <footer>
-            <h1>Footer</h1>
+            <a href="https://www.hazadus.ru/">www.hazadus.ru</a>
         </footer>
     )
 }

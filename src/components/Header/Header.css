@@ -1,12 +1,15 @@
 .navbar {
   background-color: #282c34;
-  max-height: 10vh;
+  /*max-height: 10vh;*/
+  height: 60px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /*font-size: calc(10px + 2vmin);*/
+  font-size: 25px;
   color: white;
+  cursor: default;
 }
 
 .App-logo {
