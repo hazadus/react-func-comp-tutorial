@@ -5,6 +5,7 @@ Try out:
 - [Vite](https://vitejs.dev/blog/announcing-vite2.html)
 
 References:
+- [Alternate version using contexts](https://github.com/GavinLonDigital/TeamMemberAllocationApp)
 - [React-Bootstrap](https://react-bootstrap.github.io/getting-started/introduction/)
 - freeCodeCamp React course
 - [Create React App](https://github.com/facebook/create-react-app).

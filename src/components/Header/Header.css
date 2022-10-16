@@ -6,8 +6,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  /*font-size: calc(10px + 2vmin);*/
-  font-size: 25px;
+  font-size: calc(10px + 2vmin);
+  /*font-size: 25px;*/
   color: white;
   cursor: default;
 }

@@ -7,3 +7,9 @@
     /*flex-direction: row;*/
     /*flex-wrap: wrap; !* wrap cards to new line *!*/
 }
+
+@media only screen and (max-width: 600px) {
+    .collection {
+        grid-template-columns: 1fr; /* change row width on smaller screens! */
+    }
+}
